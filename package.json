@@ -1,0 +1,30 @@
+{
+    "name": "lambda-google-shopping",
+    "version": "0.3.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "node test.js",
+        "zip": "yarn && rm lambda-googleshopping.zip || true && rm lambda-googleshopping-debug.zip || true && zip -r lambda-googleshopping.zip .",
+        "zip:debug": "yarn && rm lambda-googleshopping.zip || true && rm lambda-googleshopping-debug.zip || true && zip -r lambda-googleshopping-debug.zip .",
+        "lint": "eslint '**/*.js'",
+        "lint:fix": "eslint '**/*.js' --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/andrehrferreira/lambda-google-shopping"
+    },
+    "author": "Andre Ferreira",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "cheerio": "^1.0.0-rc.3",
+        "chrome-aws-lambda": "^2.1.1",
+        "puppeteer-core": "^2.1.1",
+        "puppeteer-extra": "^3.1.9",
+        "puppeteer-extra-plugin-stealth": "^2.4.9"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint": "^6.8.0"
+    }
+}
